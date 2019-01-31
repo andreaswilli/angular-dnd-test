@@ -31,6 +31,7 @@ export class AppComponent {
   }
 
   toggleCard(item: object): void {
+    // @ts-ignore
     let card = this.twoDimArray.find(array => array.find(i => i === item)).find(i => i === item);
     card.hidden = !card.hidden;
   }
